@@ -3,10 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Function</title>
+    <title>Document</title>
 </head>
 <body>
-    <button onclick="date()">Date</button>
+
+<img src="https://www.apple.com/newsroom/images/2025/09/apple-debuts-iphone-17/article/Apple-iPhone-17-hero-250909_inline.jpg.large_2x.jpg" width="150" onclick="mobileAlert()">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJhQdtSRPr_NhXwGpahPG2xo9c3GUvpLxqA&s" width="150" onclick="mobileAlert()">
+<img src="https://hips.hearstapps.com/hmg-prod/images/iphone-15-pro-max-review-esquire-65095f09647c8.jpg?crop=0.5xw:1xh;center,top&resize=1200:*" width="150" onclick="mobileAlert()">
+
+<h2>Student Records</h2>
+
+<table border="1" id="studentTable">
+    <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Action</th>
+    </tr>
+
+    <tr>
+        <td>Ali</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(1)">Delete</button></td>
+    </tr>
+
+    <tr>
+        <td>Ahmed</td>
+        <td>9</td>
+        <td><button onclick="deleteRow(2)">Delete</button></td>
+    </tr>
+
+    <tr>
+        <td>Mark</td>
+        <td>8</td>
+        <td><button onclick="deleteRow(3)">Delete</button></td>
+    </tr>
+
+    <tr>
+        <td>Sara</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(4)">Delete</button></td>
+    </tr>
+
+</table>
+
+
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpiTZwGRMO35XELfg00aaTAzN4PmrrizU5pw&s" width="200"
+     onmouseover="this.style.border='5px solid red'; alert('Mouse over: Image changed')"
+     onmouseout="this.style.border='5px solid black'; alert('Mouse out: Original image')">
+
+<hr>
+
+<h2>Counter</h2>
+
+
+<button onclick="count++; alert('Counter: ' + count)">Increase</button>
+<button onclick="count--; alert('Counter: ' + count)">Decrease</button>
+
+
 </body>
 <script src="./script.js"></script>
 </html>
